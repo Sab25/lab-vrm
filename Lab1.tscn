@@ -1,0 +1,134 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://prefabs/table.tscn" type="PackedScene" id=1]
+[ext_resource path="res://prefabs/smallTable.tscn" type="PackedScene" id=2]
+[ext_resource path="res://prefabs/chair.tscn" type="PackedScene" id=3]
+[ext_resource path="res://prefabs/window.tscn" type="PackedScene" id=4]
+[ext_resource path="res://prefabs/plant.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Models/Material/Material.material" type="Material" id=6]
+[ext_resource path="res://prefabs/sofa.tscn" type="PackedScene" id=7]
+[ext_resource path="res://prefabs/pc.tscn" type="PackedScene" id=8]
+[ext_resource path="res://prefabs/bookcase.tscn" type="PackedScene" id=9]
+[ext_resource path="res://prefabs/deskLamp.tscn" type="PackedScene" id=10]
+[ext_resource path="res://prefabs/documents.tscn" type="PackedScene" id=11]
+[ext_resource path="res://prefabs/vase.tscn" type="PackedScene" id=12]
+[ext_resource path="res://prefabs/carpet.tscn" type="PackedScene" id=13]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 10, 0.1, 10 )
+
+[sub_resource type="SphereShape" id=2]
+radius = 0.1
+
+[sub_resource type="BoxShape" id=3]
+
+[sub_resource type="BoxShape" id=4]
+
+[node name="Spatial" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -8.82167, 0 )
+
+[node name="Floor" type="CSGBox" parent="."]
+width = 20.0
+height = 0.1
+depth = 20.0
+material = ExtResource( 6 )
+
+[node name="StaticBody" type="StaticBody" parent="Floor"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor/StaticBody"]
+shape = SubResource( 1 )
+
+[node name="Sphere" type="RigidBody" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7.80983, 2.04688, 6.15011 )
+visible = false
+
+[node name="CollisionShape" type="CollisionShape" parent="Sphere"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+shape = SubResource( 2 )
+
+[node name="CSGSphere" type="CSGSphere" parent="Sphere"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+use_collision = true
+radius = 0.1
+radial_segments = 32
+rings = 16
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.999906, 0.00160613, -0.0136066, 0.00597938, 0.842385, 0.538843, 0.0123274, -0.538874, 0.842296, 0.85472, 9.2814, 13.3108 )
+fov = 82.9956
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.817175, 0.57639, 0, -0.57639, 0.817175, 0.493199, 9.53167, 22.4303 )
+light_color = Color( 0.92549, 0.882353, 0.403922, 1 )
+light_energy = 0.3
+
+[node name="table" parent="." instance=ExtResource( 1 )]
+transform = Transform( 7, 0, 0, 0, 2.5, 0, 0, 0, 6, 0, 0, -6.02553 )
+
+[node name="chair" parent="." instance=ExtResource( 3 )]
+transform = Transform( 0.23, 0, 0, 0, 0.19, 0, 0, 0, 0.23, 0, 1.23432, -8.71663 )
+
+[node name="Wall" type="CSGBox" parent="."]
+transform = Transform( 3.2, 0, 0, 0, 3.5, 0, 0, 0, 0.1, 6.75735, 3.06271, -9.74649 )
+
+[node name="StaticBody" type="StaticBody" parent="Wall"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Wall/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="Wall2" type="CSGBox" parent="."]
+transform = Transform( 3, 0, 0, 0, 3.5, 0, 0, 0, 0.1, -6.8609, 3.06271, -9.76346 )
+
+[node name="StaticBody" type="StaticBody" parent="Wall2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Wall2/StaticBody"]
+shape = SubResource( 3 )
+
+[node name="Wall3" type="CSGBox" parent="."]
+transform = Transform( -4.28372e-07, 0, 0.1, 0, 3.5, 0, -9.8, 0, -4.37114e-09, 9.91839, 3.05848, 0.124799 )
+
+[node name="StaticBody" type="StaticBody" parent="Wall3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Wall3/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="Wall4" type="CSGBox" parent="."]
+transform = Transform( -4.28372e-07, 0, 0.1, 0, 3.5, 0, -9.8, 0, -4.37114e-09, -9.8903, 3.05848, 0.124799 )
+
+[node name="StaticBody" type="StaticBody" parent="Wall4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Wall4/StaticBody"]
+shape = SubResource( 4 )
+
+[node name="window" parent="." instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-09, 0, -0.16, 0, 0.101, 0, 0.1, 0, -6.99382e-09, -2.16952, 1.08982, -12.1685 )
+
+[node name="plant" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -8.12881, -0.0338076, -6.99497 )
+
+[node name="plant2" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 7.89453, -0.0338076, -6.99497 )
+
+[node name="smallTable" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.045, 0, 0, 0, 0.035, 0, 0, 0, 0.045, -2.66316, 0.0965242, 6.1648 )
+
+[node name="sofa" parent="." instance=ExtResource( 7 )]
+transform = Transform( -1.5299e-07, 0, 3.5, 0, 3.5, 0, -3.5, 0, -1.5299e-07, -8.13662, 1.44817, 5.95226 )
+
+[node name="pc" parent="." instance=ExtResource( 8 )]
+transform = Transform( -3.03109, 0, 1.75, 0, 3.5, 0, -1.75, 0, -3.03109, -2.44964, 2.79976, -6.86995 )
+
+[node name="bookcase" parent="." instance=ExtResource( 9 )]
+transform = Transform( -2, 0, 3.77489e-07, 0, 2, 0, -3.01992e-07, 0, -2.5, 9.22636, 0.100013, 5.0713 )
+
+[node name="deskLamp" parent="." instance=ExtResource( 10 )]
+transform = Transform( 1.5, 0, -2.59808, 0, 3, 0, 2.59808, 0, 1.5, 3.58928, 3.24246, -4.98826 )
+
+[node name="documents" parent="." instance=ExtResource( 11 )]
+transform = Transform( -5, 0, -4.37114e-07, 0, 5, 0, 4.37114e-07, 0, -5, 2.61705, 2.12623, -6.40462 )
+
+[node name="vase" parent="." instance=ExtResource( 12 )]
+transform = Transform( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -2.43329, 1.50872, 6.39494 )
+
+[node name="carpet" parent="." instance=ExtResource( 13 )]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -2.58101, 0.175774, 5.59245 )

@@ -1,0 +1,199 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://Models/Table/scene.gltf" type="PackedScene" id=1]
+[ext_resource path="res://Models/Table/vetro.material" type="Material" id=2]
+
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( 0.754227, 0.683131, 0.400847, -0.754237, 0.640763, -0.404237, -0.754237, 0.640763, 0.400847, -0.754237, 0.683131, -0.404237, 0.754227, 0.640763, -0.404237, -0.754237, 0.683131, 0.400847, 0.754227, 0.640763, 0.400847, 0.754227, 0.683131, -0.404237 )
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( 0.543508, 0.328428, 0.111807, 0.590002, 0.340052, 0.222252, 0.590002, 0.328428, 0.222252, 0.590002, 0.340052, 0.111807, 0.543508, 0.340052, 0.222252, 0.543508, 0.328428, 0.222252, 0.590002, 0.328428, 0.111807, 0.543508, 0.340052, 0.111807 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+points = PoolVector3Array( 0.5871, 0.336393, 0.110717, 0.543508, 0.165667, 0.0943688, 0.590002, 0.165667, 0.0943688, 0.543508, 0.456282, 0.0943688, 0.543508, 0.165667, 0.105992, 0.590002, 0.456282, 0.0943688, 0.543508, 0.456282, 0.105992, 0.590002, 0.165667, 0.105992, 0.543508, 0.328384, 0.111806, 0.590002, 0.456282, 0.105992 )
+
+[sub_resource type="ConvexPolygonShape" id=4]
+points = PoolVector3Array( 0.543508, 0.345866, -0.0916396, 0.590002, 0.502798, -0.0567704, 0.543508, 0.502798, -0.0567704, 0.590002, 0.502798, -0.103264, 0.543508, 0.502798, -0.103264, 0.590002, 0.345866, -0.103264, 0.590002, 0.345866, -0.0916396, 0.543508, 0.345866, -0.103264 )
+
+[sub_resource type="ConvexPolygonShape" id=5]
+points = PoolVector3Array( 0.543508, 0.340028, -0.109077, 0.590002, 0.177325, -0.056771, 0.543508, 0.177325, -0.056771, 0.590002, 0.165684, -0.10326, 0.590002, 0.345831, -0.0916362, 0.543508, 0.165684, -0.10326, 0.543508, 0.345831, -0.0916362, 0.590002, 0.340028, -0.109077, 0.543508, 0.165684, -0.056771 )
+
+[sub_resource type="ConvexPolygonShape" id=6]
+points = PoolVector3Array( -0.590002, 0.328428, 0.111807, -0.543508, 0.340052, 0.222252, -0.543508, 0.328428, 0.222252, -0.543508, 0.340052, 0.111807, -0.590002, 0.340052, 0.222252, -0.590002, 0.328428, 0.222252, -0.543508, 0.328428, 0.111807, -0.590002, 0.340052, 0.111807 )
+
+[sub_resource type="ConvexPolygonShape" id=7]
+points = PoolVector3Array( -0.5471, 0.335531, 0.110459, -0.590002, 0.165667, 0.0943688, -0.543508, 0.165667, 0.0943688, -0.590002, 0.456282, 0.0943688, -0.590002, 0.165667, 0.105992, -0.543508, 0.456282, 0.0943688, -0.590002, 0.456282, 0.105992, -0.543508, 0.165667, 0.105992, -0.590002, 0.328384, 0.111806, -0.543508, 0.456282, 0.105992 )
+
+[sub_resource type="ConvexPolygonShape" id=8]
+points = PoolVector3Array( -0.590002, 0.345866, -0.0916396, -0.543508, 0.502798, -0.0567704, -0.590002, 0.502798, -0.0567704, -0.543508, 0.502798, -0.103264, -0.590002, 0.502798, -0.103264, -0.543508, 0.345866, -0.103264, -0.543508, 0.345866, -0.0916396, -0.590002, 0.345866, -0.103264 )
+
+[sub_resource type="ConvexPolygonShape" id=9]
+points = PoolVector3Array( -0.590002, 0.340028, -0.109077, -0.543508, 0.177325, -0.056771, -0.590002, 0.177325, -0.056771, -0.543508, 0.165684, -0.10326, -0.543508, 0.345831, -0.0916362, -0.590002, 0.165684, -0.10326, -0.590002, 0.345831, -0.0916362, -0.543508, 0.340028, -0.109077, -0.590002, 0.165684, -0.056771 )
+
+[sub_resource type="ConvexPolygonShape" id=10]
+points = PoolVector3Array( 0.543508, 0.328417, 0.222252, 0.590002, 0.45631, 0.303632, 0.590002, 0.45631, 0.257135, 0.590002, 0.0784738, 0.303632, 0.543508, 0.45631, 0.303632, 0.543508, 0.0784738, 0.303632, 0.590002, 0.0784738, 0.257135, 0.590002, 0.34003, 0.222252, 0.543508, 0.0784738, 0.257135, 0.543508, 0.45631, 0.257135 )
+
+[sub_resource type="ConvexPolygonShape" id=11]
+points = PoolVector3Array( 0.543508, 0.328428, -0.236965, 0.590002, 0.340052, -0.109082, 0.590002, 0.328428, -0.109082, 0.590002, 0.340052, -0.236965, 0.543508, 0.340052, -0.109082, 0.543508, 0.328428, -0.109082, 0.590002, 0.328428, -0.236965, 0.543508, 0.340052, -0.236965 )
+
+[sub_resource type="ConvexPolygonShape" id=12]
+points = PoolVector3Array( -0.590002, 0.328417, 0.222252, -0.543508, 0.45631, 0.303632, -0.543508, 0.45631, 0.257135, -0.543508, 0.0784738, 0.303632, -0.590002, 0.45631, 0.303632, -0.590002, 0.0784738, 0.303632, -0.543508, 0.0784738, 0.257135, -0.543508, 0.34003, 0.222252, -0.590002, 0.0784738, 0.257135, -0.590002, 0.45631, 0.257135 )
+
+[sub_resource type="ConvexPolygonShape" id=13]
+points = PoolVector3Array( -0.590002, 0.328428, -0.236965, -0.543508, 0.340052, -0.109082, -0.543508, 0.328428, -0.109082, -0.543508, 0.340052, -0.236965, -0.590002, 0.340052, -0.109082, -0.590002, 0.328428, -0.109082, -0.543508, 0.328428, -0.236965, -0.590002, 0.340052, -0.236965 )
+
+[sub_resource type="ConvexPolygonShape" id=14]
+points = PoolVector3Array( 0.590002, 0.659755, 0.204813, 0.543508, 0.595819, -0.0044295, 0.543508, 0.613268, -0.0567658, 0.590002, 0.595819, -0.0044295, 0.590002, 0.659755, -0.0567658, 0.543508, 0.659755, 0.204813, 0.543508, 0.613268, 0.204813, 0.543508, 0.659755, -0.0567658, 0.590002, 0.613268, 0.204813, 0.590002, 0.613268, -0.0567658 )
+
+[sub_resource type="ConvexPolygonShape" id=15]
+points = PoolVector3Array( 0.5871, 0.5871, -0.000817908, 0.543508, 0.456324, 0.0943643, 0.590002, 0.456324, 0.0943643, 0.543508, 0.491212, -0.0567658, 0.543508, 0.595806, 0.00718486, 0.590002, 0.491212, -0.0567658, 0.590002, 0.502832, 0.105995, 0.543508, 0.502832, 0.105995, 0.590002, 0.595806, 0.00718486, 0.543508, 0.595806, -0.00444544, 0.590002, 0.502832, -0.0567658, 0.543508, 0.456324, 0.105995 )
+
+[sub_resource type="ConvexPolygonShape" id=16]
+points = PoolVector3Array( 0.590002, 0.0784738, 0.303632, 0.543508, -0.00290643, 0.0943688, 0.543508, 0.0435829, 0.0943688, 0.590002, -0.00290643, 0.0943688, 0.543508, -0.00290643, 0.303632, 0.590002, -0.00290643, 0.303632, 0.543508, 0.0784738, 0.303632, 0.590002, 0.0435829, 0.0943688, 0.543508, 0.0784738, 0.257113, 0.590002, 0.0784738, 0.257113 )
+
+[sub_resource type="ConvexPolygonShape" id=17]
+points = PoolVector3Array( 0.590002, 0.177286, 0.0943688, 0.5471, 0.118296, -0.000848614, 0.543508, 0.165658, -0.0567658, 0.543508, 0.177286, 0.0943688, 0.590002, 0.177286, -0.0567658, 0.590002, 0.113357, 0.00718827, 0.543508, 0.165658, 0.0943688, 0.543508, 0.177286, -0.0567658, 0.543508, 0.113357, 0.00718827 )
+
+[sub_resource type="ConvexPolygonShape" id=18]
+points = PoolVector3Array( 0.590002, 0.11334, 0.00718827, 0.543508, -0.00290643, -0.0567658, 0.543508, 0.0436034, -0.0567658, 0.543508, -0.00290643, 0.0943688, 0.590002, -0.00290643, -0.0567658, 0.590002, -0.00290643, 0.0943688, 0.543508, 0.11334, 0.00718827, 0.543508, 0.0436034, 0.0943688, 0.590002, 0.0436034, 0.0943688, 0.590002, 0.0436034, -0.0567658, 0.543508, 0.11334, -0.00443975 )
+
+[sub_resource type="ConvexPolygonShape" id=19]
+points = PoolVector3Array( 0.543508, 0.0959124, -0.300906, 0.590002, 0.560897, -0.254413, 0.543508, 0.560897, -0.254413, 0.590002, 0.560897, -0.300906, 0.590002, 0.0959124, -0.300906, 0.543508, 0.0959124, -0.254413, 0.543508, 0.560897, -0.300906, 0.590002, 0.0959124, -0.254413, 0.543508, 0.328404, -0.236971, 0.590002, 0.328404, -0.236971 )
+
+[sub_resource type="ConvexPolygonShape" id=20]
+points = PoolVector3Array( -0.543508, 0.659755, 0.204813, -0.590002, 0.595819, -0.0044295, -0.590002, 0.613268, -0.0567658, -0.543508, 0.595819, -0.0044295, -0.543508, 0.659755, -0.0567658, -0.590002, 0.659755, 0.204813, -0.590002, 0.613268, 0.204813, -0.590002, 0.659755, -0.0567658, -0.543508, 0.613268, 0.204813, -0.543508, 0.613268, -0.0567658 )
+
+[sub_resource type="ConvexPolygonShape" id=21]
+points = PoolVector3Array( -0.543508, 0.595806, -0.00444544, -0.590002, 0.456324, 0.0943643, -0.543508, 0.456324, 0.0943643, -0.590002, 0.491212, -0.0567658, -0.590002, 0.595806, 0.00718486, -0.543508, 0.491212, -0.0567658, -0.543508, 0.502832, 0.105995, -0.590002, 0.502832, 0.105995, -0.590002, 0.502832, -0.0567658, -0.543508, 0.456324, 0.105995, -0.543508, 0.595806, 0.00718486 )
+
+[sub_resource type="ConvexPolygonShape" id=22]
+points = PoolVector3Array( -0.543508, 0.0784738, 0.303632, -0.590002, -0.00290643, 0.0943688, -0.590002, 0.0435829, 0.0943688, -0.543508, -0.00290643, 0.0943688, -0.590002, -0.00290643, 0.303632, -0.543508, -0.00290643, 0.303632, -0.590002, 0.0784738, 0.303632, -0.543508, 0.0435829, 0.0943688, -0.590002, 0.0784738, 0.257113, -0.543508, 0.0784738, 0.257113 )
+
+[sub_resource type="ConvexPolygonShape" id=23]
+points = PoolVector3Array( -0.543508, 0.177286, 0.0943688, -0.5871, 0.117347, -0.00153855, -0.590002, 0.165658, -0.0567658, -0.543508, 0.165658, -0.0567658, -0.543508, 0.113357, 0.00718827, -0.590002, 0.165658, 0.0943688, -0.590002, 0.177286, -0.0567658, -0.543508, 0.177286, -0.0567658, -0.590002, 0.177286, 0.0943688, -0.590002, 0.113357, 0.00718827 )
+
+[sub_resource type="ConvexPolygonShape" id=24]
+points = PoolVector3Array( -0.543508, 0.11334, 0.00718827, -0.590002, -0.00290643, -0.0567658, -0.590002, 0.0436034, -0.0567658, -0.590002, -0.00290643, 0.0943688, -0.543508, -0.00290643, -0.0567658, -0.543508, -0.00290643, 0.0943688, -0.590002, 0.11334, 0.00718827, -0.590002, 0.0436034, 0.0943688, -0.543508, 0.0436034, 0.0943688, -0.543508, 0.0436034, -0.0567658, -0.543508, 0.11334, -0.00443975 )
+
+[sub_resource type="ConvexPolygonShape" id=25]
+points = PoolVector3Array( -0.590002, 0.0959124, -0.300906, -0.543508, 0.560897, -0.254413, -0.590002, 0.560897, -0.254413, -0.543508, 0.560897, -0.300906, -0.543508, 0.0959124, -0.300906, -0.590002, 0.0959124, -0.254413, -0.590002, 0.560897, -0.300906, -0.543508, 0.0959124, -0.254413, -0.590002, 0.328404, -0.236971, -0.543508, 0.328404, -0.236971 )
+
+[sub_resource type="ConvexPolygonShape" id=26]
+points = PoolVector3Array( 0.543508, 0.45631, 0.25712, 0.590002, 0.659741, 0.303632, 0.590002, 0.659741, 0.204823, 0.543508, 0.659741, 0.303632, 0.590002, 0.45631, 0.303632, 0.543508, 0.659741, 0.204823, 0.543508, 0.45631, 0.303632, 0.590002, 0.45631, 0.25712, 0.543508, 0.613224, 0.204823, 0.590002, 0.613224, 0.204823 )
+
+[sub_resource type="ConvexPolygonShape" id=27]
+points = PoolVector3Array( 0.590002, 0.0436108, -0.0567897, 0.543508, -0.00290643, -0.300883, 0.543508, 0.0959124, -0.300883, 0.590002, -0.00290643, -0.300883, 0.543508, -0.00290643, -0.0567897, 0.590002, 0.0959124, -0.300883, 0.590002, -0.00290643, -0.0567897, 0.543508, 0.0436108, -0.0567897, 0.543508, 0.0959124, -0.254386, 0.590002, 0.0959124, -0.254386 )
+
+[sub_resource type="ConvexPolygonShape" id=28]
+points = PoolVector3Array( -0.590002, 0.45631, 0.25712, -0.543508, 0.659741, 0.303632, -0.543508, 0.659741, 0.204823, -0.590002, 0.659741, 0.303632, -0.543508, 0.45631, 0.303632, -0.590002, 0.659741, 0.204823, -0.590002, 0.45631, 0.303632, -0.543508, 0.45631, 0.25712, -0.590002, 0.613224, 0.204823, -0.543508, 0.613224, 0.204823 )
+
+[sub_resource type="ConvexPolygonShape" id=29]
+points = PoolVector3Array( -0.543508, 0.0436108, -0.0567897, -0.590002, -0.00290643, -0.300883, -0.590002, 0.0959124, -0.300883, -0.543508, -0.00290643, -0.300883, -0.590002, -0.00290643, -0.0567897, -0.543508, 0.0959124, -0.300883, -0.543508, -0.00290643, -0.0567897, -0.590002, 0.0436108, -0.0567897, -0.590002, 0.0959124, -0.254386, -0.543508, 0.0959124, -0.254386 )
+
+[sub_resource type="ConvexPolygonShape" id=30]
+points = PoolVector3Array( 0.590002, 0.613253, -0.0567897, 0.543508, 0.560942, -0.300883, 0.590002, 0.560942, -0.300883, 0.543508, 0.659761, -0.300883, 0.590002, 0.659761, -0.300883, 0.543508, 0.659761, -0.0567897, 0.543508, 0.613253, -0.0567897, 0.590002, 0.659761, -0.0567897, 0.543508, 0.560942, -0.254386, 0.590002, 0.560942, -0.254386 )
+
+[sub_resource type="ConvexPolygonShape" id=31]
+points = PoolVector3Array( -0.543508, 0.613253, -0.0567897, -0.590002, 0.560942, -0.300883, -0.543508, 0.560942, -0.300883, -0.590002, 0.659761, -0.300883, -0.543508, 0.659761, -0.300883, -0.590002, 0.659761, -0.0567897, -0.590002, 0.613253, -0.0567897, -0.543508, 0.659761, -0.0567897, -0.590002, 0.560942, -0.254386, -0.543508, 0.560942, -0.254386 )
+
+[node name="table" instance=ExtResource( 1 )]
+
+[node name="Object_4" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0" index="0"]
+material/0 = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_4" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_4/StaticBody" index="0"]
+shape = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5" index="0"]
+
+[node name="CollisionShape31" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="0"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape30" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="1"]
+shape = SubResource( 3 )
+
+[node name="CollisionShape29" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="2"]
+shape = SubResource( 4 )
+
+[node name="CollisionShape28" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="3"]
+shape = SubResource( 5 )
+
+[node name="CollisionShape27" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="4"]
+shape = SubResource( 6 )
+
+[node name="CollisionShape26" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="5"]
+shape = SubResource( 7 )
+
+[node name="CollisionShape25" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="6"]
+shape = SubResource( 8 )
+
+[node name="CollisionShape24" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="7"]
+shape = SubResource( 9 )
+
+[node name="CollisionShape23" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="8"]
+shape = SubResource( 10 )
+
+[node name="CollisionShape22" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="9"]
+shape = SubResource( 11 )
+
+[node name="CollisionShape21" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="10"]
+shape = SubResource( 12 )
+
+[node name="CollisionShape20" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="11"]
+shape = SubResource( 13 )
+
+[node name="CollisionShape19" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="12"]
+shape = SubResource( 14 )
+
+[node name="CollisionShape18" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="13"]
+shape = SubResource( 15 )
+
+[node name="CollisionShape17" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="14"]
+shape = SubResource( 16 )
+
+[node name="CollisionShape16" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="15"]
+shape = SubResource( 17 )
+
+[node name="CollisionShape15" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="16"]
+shape = SubResource( 18 )
+
+[node name="CollisionShape14" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="17"]
+shape = SubResource( 19 )
+
+[node name="CollisionShape13" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="18"]
+shape = SubResource( 20 )
+
+[node name="CollisionShape12" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="19"]
+shape = SubResource( 21 )
+
+[node name="CollisionShape11" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="20"]
+shape = SubResource( 22 )
+
+[node name="CollisionShape10" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="21"]
+shape = SubResource( 23 )
+
+[node name="CollisionShape9" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="22"]
+shape = SubResource( 24 )
+
+[node name="CollisionShape8" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="23"]
+shape = SubResource( 25 )
+
+[node name="CollisionShape7" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="24"]
+shape = SubResource( 26 )
+
+[node name="CollisionShape6" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="25"]
+shape = SubResource( 27 )
+
+[node name="CollisionShape5" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="26"]
+shape = SubResource( 28 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="27"]
+shape = SubResource( 29 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="28"]
+shape = SubResource( 30 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Sketchfab_model/root/GLTF_SceneRootNode/Industrial Table_0/Object_5/StaticBody" index="29"]
+shape = SubResource( 31 )
